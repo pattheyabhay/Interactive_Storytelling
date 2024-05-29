@@ -1,12 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+#heading_main{
+    font-family: "Press Start 2P", system-ui;
+    color: #ffffff;
+    top: 200px;
+}
 body {
     font-family: "Press Start 2P", system-ui;
-    background-image: url('../assets/quest.jpg');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -34,29 +35,38 @@ body {
 } */
 #genre-buttons button {
     font-family: "Press Start 2P", system-ui;
-
     margin: 10px;
     padding: 20px 20px;
     font-size: 1em;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    background: linear-gradient(to right, #f98305, #a07c61); /* Gradient from pink to orange */
+    /* background: linear-gradient(to right, #fb00f3, #ffffff); Gradient from pink to orange */
+    background: linear-gradient(45deg, black, transparent);
+
 }
 
 #genre-buttons button:hover {
-    background: linear-gradient(to right, #b0e581, #ff7e5f); /* Reversed gradient on hover */
+    background: linear-gradient(to right, #b0e581, #f75fff); /* Reversed gradient on hover */
+    color: rgb(0, 0, 0);
+
 }
 
 #game-container {
-    background-color: rgb(152 116 39);
+    background: linear-gradient(45deg, black, transparent);
     padding: 20px;
     border-radius: 35px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(129 118 118 / 10%);
     width: 80%;
     max-width: 38rem;
     text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#game-container:hover{
+    background: linear-gradient(to right, #b0e581, #f75fff); /* Reversed gradient on hover */
+    color: #000000;
 }
 
 #game-choices button {

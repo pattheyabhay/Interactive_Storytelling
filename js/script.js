@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.body.style.backgroundImage = "url(../assets/main.jpg)";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-    let music = new Audio("../assets/music.mp3");
 });
 
 function chooseGenre(genre) {
@@ -41,7 +40,6 @@ function chooseGenre(genre) {
             initialText = '';
             scriptPath = '';
             cssPath = '';
-            music.play();
     }
 
     document.body.style.backgroundImage = `url(${backgroundUrl})`;
