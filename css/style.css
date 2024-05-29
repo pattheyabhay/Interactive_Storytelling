@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    background-image: url('../assets/quest.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-heading {
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 0px;
+    font-size: 2.5em;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* #genre-buttons button {
+    text-align: center;
+    margin: 20px 17px;
+    padding: 20px;
+    font-family: "Press Start 2P", system-ui;
+
+} */
+#genre-buttons button {
+    font-family: "Press Start 2P", system-ui;
+
+    margin: 10px;
+    padding: 20px 20px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f98305, #a07c61); /* Gradient from pink to orange */
+}
+
+#genre-buttons button:hover {
+    background: linear-gradient(to right, #b0e581, #ff7e5f); /* Reversed gradient on hover */
+}
+
+#game-container {
+    background-color: rgb(152 116 39);
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 38rem;
+    text-align: center;
+}
+
+#game-choices button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: black;
+}
+
+#game-choices button:hover {
+    background-color: #a3935f;
+    color: #ffffff;
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: contain; /* Adjusts the image size for smaller screens */
+        background-size: 100% 100%; /* Stretches the image */
+
+    }
+}

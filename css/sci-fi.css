@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    margin-top: 8rem;
+}
+
+#game-heading{
+    background: linear-gradient(180deg, #fc0040, #cdff00);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+
+}
+#genre-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+#game-choices{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+#genre-buttons button{
+    background: linear-gradient(180deg, #fc0040, #cdff00);
+    padding: 2rem;
+    opacity: 0.6;
+    border-radius: 50px;
+    border: 2px solid;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;
+
+    background: linear-gradient(180deg, #fc0040, #cdff00);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #cdff00,  #fc0040);
+    color: black;
+}
+
+#genre-buttons button:hover{
+    background: linear-gradient(180deg, #cdff00,  #fc0040);
+    color: black;
+}
