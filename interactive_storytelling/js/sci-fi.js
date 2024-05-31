@@ -283,8 +283,6 @@ function bypassStation() {
     setGameChoices([{ text: 'Restart', action: startSciFiAdventure }]);
 }
 
-// Function to set game text and choices
-
 
 
 // Start the adventure
