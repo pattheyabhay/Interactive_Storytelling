@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
     setGameText("Choose your adventure genre to start the game.");
-    document.body.style.backgroundImage = "url(./main.jpg)";
+    document.body.style.backgroundImage = "url(main.jpg)";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
 });
