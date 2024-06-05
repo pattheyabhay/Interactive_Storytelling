@@ -18,19 +18,19 @@ function chooseGenre(genre) {
 
     switch (genre) {
         case 'sci-fi':
-            backgroundUrl = './sci-fi.jpg';
+            backgroundUrl = 'sci-fi.jpg';
             scriptPath = './js/sci-fi.js';
             cssPath = './css/sci-fi.css';
             initialText = "Welcome to the Sci-Fi Adventure! You are aboard a spaceship navigating through the galaxy. Do you explore the nearby planet or continue your journey?";
             break;
         case 'fantasy':
-            backgroundUrl = './quest.jpg';
+            backgroundUrl = 'quest.jpg';
             scriptPath = './js/fantasy.js';
             cssPath = './css/fantasy.css';
             initialText = "Welcome to the Fantasy Adventure! You find yourself in an enchanted forest. Do you explore the ancient ruins or follow the mystical river?";
             break;
         case 'mystery':
-            backgroundUrl = './mystery.jpg';
+            backgroundUrl = 'mystery.jpg';
             scriptPath = './js/mystery.js';
             cssPath = './css/mystery.css';
             initialText = "Welcome to the Mystery Adventure! You are in a foggy town with secrets to uncover. Do you investigate the old mansion or visit the eerie graveyard?";
@@ -101,6 +101,6 @@ function setGameChoices(choices) {
         choicesContainer.appendChild(button);
     });
 }
-function refreshFunction(){
-    window.location.reload;
-}
+// function refreshFunction(){
+//     window.location.reload;
+// }
