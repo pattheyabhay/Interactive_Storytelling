@@ -89,6 +89,8 @@ function setGameText(text) {
     document.getElementById('game-text').innerText = text;
 }
 
+
+
 function setGameChoices(choices) {
     const choicesContainer = document.getElementById('game-choices');
     choicesContainer.innerHTML = '';
@@ -98,4 +100,7 @@ function setGameChoices(choices) {
         button.onclick = choice.action;
         choicesContainer.appendChild(button);
     });
+}
+function refreshFunction(){
+    window.location.reload;
 }

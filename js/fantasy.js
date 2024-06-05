@@ -1,3 +1,5 @@
+
+
 function startFantasyAdventure() {
     setGameText("Welcome to the Fantasy Adventure! You are a brave adventurer in a mystical land. Do you explore the enchanted forest or venture into the ancient ruins?");
     setGameChoices([
@@ -5,6 +7,7 @@ function startFantasyAdventure() {
         { text: 'Venture into the ancient ruins', action: exploreRuins }
     ]);
 }
+
 
 function exploreForest() {
     setGameText("You decide to explore the enchanted forest. As you wander through, you come across a magical glade with a sparkling spring and a hidden cave. Do you investigate the spring or enter the cave?");
@@ -126,4 +129,3 @@ function sneakPastGoblins() {
 
 
 // Start the adventure
-startFantasyAdventure();

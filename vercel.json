@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "public": "public",
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
