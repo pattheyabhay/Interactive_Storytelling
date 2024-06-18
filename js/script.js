@@ -49,6 +49,7 @@ function chooseGenre(genre) {
 
     document.getElementById('game-heading').innerText = genre.charAt(0).toUpperCase() + genre.slice(1) + " Adventure";
     setGameText(initialText);
+    
 
     if (cssPath) {
         loadCSS(cssPath);
@@ -91,16 +92,17 @@ function setGameText(text) {
 
 
 
-function setGameChoices(choices) {
-    const choicesContainer = document.getElementById('game-choices');
-    choicesContainer.innerHTML = '';
-    choices.forEach(choice => {
-        const button = document.createElement('button');
-        button.innerText = choice.text;
-        button.onclick = choice.action;
-        choicesContainer.appendChild(button);
-    });
-}
+// function setGameChoices(choices) {
+//     const choicesContainer = document.getElementById('game-choices');
+//     choicesContainer.innerHTML = '';
+//     choices.forEach(choice => {
+//         const button = document.createElement('button');
+//         button.innerText = choice.text;
+//         button.onclick = choice.action; 
+//         choicesContainer.appendChild(button);
+//         button.display.style = none;
+//     });
+// }
 // function refreshFunction(){
 //     window.location.reload;
 // }

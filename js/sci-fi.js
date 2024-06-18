@@ -283,7 +283,16 @@ function bypassStation() {
     setGameChoices([{ text: 'Restart', action: startSciFiAdventure }]);
 }
 
-
+function setGameChoices(choices) {
+    const choicesContainer = document.getElementById('game-choices');
+    choicesContainer.innerHTML = '';
+    choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.innerText = choice.text;
+        button.onclick = choice.action;
+        choicesContainer.appendChild(button);
+    });
+}
 
 // Start the adventure
 startSciFiAdventure();
